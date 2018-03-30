@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorldController {
 
 	@RequestMapping(value="/getTotalOrders",method=RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<?> getTotalOrders(@RequestBody String obj)
+    public ResponseEntity<?> getTotalOrders()
 	{
        List<WebResponse> list = new ArrayList<>();
 		
@@ -32,7 +32,7 @@ public class HelloWorldController {
     }
 	
 	@RequestMapping(value="/groupByOrderChannel",method=RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<?> groupByOrderChannel(@RequestBody String obj)
+    public ResponseEntity<?> groupByOrderChannel()
 	{
        List<WebResponse> list = new ArrayList<>();
 		
